@@ -1,4 +1,4 @@
-package complexCalculator;
+package javaResult.ResultProjectJavaOOP.complexCalculator;
 
 public interface Calculable {
 	Calculable sum();
