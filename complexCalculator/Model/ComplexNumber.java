@@ -1,4 +1,4 @@
-package javaResult.ResultProjectJavaOOP.complexCalculator;
+package complexCalculator.Model;
 
 public class ComplexNumber {
 	private double real;
@@ -27,7 +27,11 @@ public class ComplexNumber {
 
 	@Override
 	public String toString() {
-		return "ComplexNumber [real=" + real + ", imaginary=" + imaginary + "]";
+		if (imaginary >= 0) {
+			return real + " + " + imaginary + "i";
+		} else {
+			return real + " - " + (-imaginary) + "i";
+		}
 	}
-
+//TODO В этом классе проявлен Принцип Единственной ответвственности
 }
