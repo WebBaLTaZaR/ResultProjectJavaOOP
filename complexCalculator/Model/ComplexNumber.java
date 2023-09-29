@@ -1,22 +1,12 @@
 package complexCalculator.Model;
 
-public class ComplexNumber {
-	private double real;
+public class ComplexNumber extends AbNumber {
 	private double imaginary;
 
 	public ComplexNumber(double real, double imaginary) {
-		this.real = real;
+		super(real);
 		this.imaginary = imaginary;
 	}
-
-	public double getReal() {
-		return real;
-	}
-
-	public void setReal(double real) {
-		this.real = real;
-	}
-
 	public double getImaginary() {
 		return imaginary;
 	}
@@ -34,4 +24,4 @@ public class ComplexNumber {
 		}
 	}
 //TODO В этом классе проявлен Принцип Единственной ответвственности
-}
+}//TODO Принцип подстановки Liskov + Принцип Открытости/закрытости
